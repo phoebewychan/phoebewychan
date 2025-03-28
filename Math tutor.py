@@ -34,6 +34,8 @@ def math_tutor():
             score += 1
     percentscore = round((score / numofq) * 100)
     question_list = ', '.join(question_list)
+    print(question_list)
+
     return (f'Thank you for playing. You have got {score} out of {numofq} questions correct. Your score is {percentscore}%. Here are all the questions with the correct answer: {question_list}')
 
 print(math_tutor())
